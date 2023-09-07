@@ -49,14 +49,14 @@ def play_menu():
 def win_lose(jogador1, jogador2,player1_wins,player2_wins):
     
     if jogador1 == 1 and jogador2 == 3 or jogador1 == 2 and jogador2 == 1 or jogador1 == 3 and jogador2 == 2:
-        print(f"Player 1 wins {player1_wins} times")
+        print(f"Player 1 wins {player1_wins+1} times")
         player1_wins += 1
     
     elif jogador1 == jogador2:
         print("Draw")
     
     else:
-        print(f"Player 2 wins {player2_wins} times")
+        print(f"Player 2 wins {player2_wins+1} times")
         player2_wins += 1
     
     return player1_wins, player2_wins
